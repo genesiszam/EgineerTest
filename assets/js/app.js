@@ -28,8 +28,8 @@ $(document).ready(function () {
         fetch(proxyurl + url)
           .then((response) => response.text())
           .then(function (contents) {
-            localStorage.setItem("userObject", contents);
-            window.location.href = "result.html";
+            localStorage.setItem("userData", contents);
+            window.location.href = "layout.html";
           })
           .catch((e) => console.log(e));
       } else {

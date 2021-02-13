@@ -7,8 +7,8 @@ $(document).ready(function () {
    * If there's no content in the JSON object, makes sure to tell the user
    */
   function setOutcome() {
-    if (window.localStorage && localStorage.userObject) {
-      userObject = localStorage.getItem("userObject");
+    if (window.localStorage && localStorage.userData) {
+      userObject = localStorage.getItem("userData");
       retreivedObject = JSON.parse(userObject); //parses the retreived object into an JSON object
       if (JSON.stringify(retreivedObject) == "[]") {
         $(".result-desc").text(
